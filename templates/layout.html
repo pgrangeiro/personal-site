@@ -1,27 +1,27 @@
 <!doctype html>
+<html lang="pt">
 <meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Paula Grangeiro{% endblock %}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block head %}{% endblock %}
+<link rel="icon" href="../../favicon.ico">
+{% block css %}
+<link href="{{ '/static/bootstrap/css/bootstrap.min.css'|url }}" rel="stylesheet">
+<link href="{{ '/static/carousel.css'|url }}" rel="stylesheet">
+{% endblock %}
+
 <body>
-  <header>
-    <h1>pgrangeiro-site</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif%}>
-          <a href="{{ '/'|url }}">Welcome</a>
-        </li>
-        {% for href, title in [['/projects', 'Projects'], ['/about', 'About']] %}
-        <li{% if this.is_child_of(href) %} class="active"{% endif %}>
-          <a href="{{ href|url }}">{{ title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2016 by Paula Grangeiro.
-  </footer>
+
+  {% include 'includes/navbar.html' %}
+  {% include 'includes/carousel.html' %}
+
+  {% block body %}{% endblock %}
+
+  {% block script %}
+  <script src="{{ '/static/jquery.min.js'|url }}"></script>
+  <script src="{{ '/static/bootstrap/js/bootstrap.min.js'|url }}"></script>
+  <script src="{{ '/static/holder.min.js'|url }}"></script>
+  {% endblock %}
 </body>
+</html>
