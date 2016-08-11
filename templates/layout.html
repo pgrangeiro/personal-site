@@ -4,7 +4,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block head %}{% endblock %}
+{% block head %}
+<meta name="description" content="Paula Grangeiro">
+<meta name="author" content="Ajudando a transformar a web com algumas linhas de código e um pouco de café. ">
+<title>{{ this.title }}</title>
+{% endblock %}
 <link rel="icon" href="../../favicon.ico">
 {% block css %}
 <link href="{{ '/static/bootstrap/css/bootstrap.min.css'|url }}" rel="stylesheet">
@@ -14,7 +18,10 @@
 <body>
 
   {% include 'includes/navbar.html' %}
-  {% include 'includes/carousel.html' %}
+
+  {% block carousel %}
+    {% include 'includes/carousel.html' %}
+  {% endblock %}
 
   {% block body %}{% endblock %}
 
