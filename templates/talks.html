@@ -1,25 +1,44 @@
 {% extends "layout.html" %}
 
-{% block carousel %}{% endblock %}
+{% block css %}
+{{ super() }}
+<link href="{{ '/static/font-awesome/css/font-awesome.min.css'|url }}" rel="stylesheet" />
+<link href="{{ '/static/main.css'|url }}" rel="stylesheet" />
+{% endblock %}
 
 {% block body %}
 <div class="container marketing collection">
   <div class="row">
+
+    {% for talk in this.talks.blocks %}
     <div class="col-xs-2 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+
+      <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ talk.photo|url }}" />
+
+      <h4>{{ talk.title }}</h4>
+
+      <p class="text-muted">
+        <span>{{ talk.date.strftime('%d/%m/%Y') }} | {{ talk.event }}</span>
+      </p>
+
+      <p>{{ talk.description }}</p>
+
+      <p class="pull-right btns">
+        {% if talk.file|trim %}
+        <a href="{{ talk.file|url }}" target="_blank"><i class="fa fa-download" aria-hidden="true" title="Download slides"></i></a>
+        {% endif %}
+        {% if talk.video|trim %}
+        <a href="{{ talk.video }}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true" title="Assistir vídeo"></i></a>
+        {% endif %}
+      </p>
+      {% set tags = talk.tags.split(',') %}
+      <p class="tag">
+        {% for tag in tags %}
+        <a class="label label-info" href="#" role="button">{{ tag }}</a>
+        {% endfor %}
+      </p>
     </div>
-    <div class="col-xs-2 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div>
-    <div class="col-xs-2 col-lg-4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-    </div>
+    {% endfor %}
   </div>
 
   <hr class="featurette-divider" />
