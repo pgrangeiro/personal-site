@@ -1,5 +1,6 @@
 body {
   font-family: 'Verdana', sans-serif;
+  overflow: auto;
 }
 
 a {
@@ -71,6 +72,15 @@ div.page {
   font-size: 48px;
 }
 
-.featurette-divider {
-  margin: 50px 0;
+.qualification a {
+  margin-bottom: 5px;
+}
+
+.featurette {
+  margin-bottom: 60px;
+}
+
+.about i {
+  font-size: 140px;
+  margin-bottom:10px;
 }
