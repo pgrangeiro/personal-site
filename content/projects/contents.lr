@@ -1,1 +1,16 @@
-title: Projects
+title: Paula Grangeiro |  Projetos
+---
+projects:
+
+#### project ####
+title: Django Girls Niterói
+----
+description: Projeto internacional de tutoria para mulheres completamente iniciantes em programação.
+----
+url: https://djangogirls.org/niteroi/
+----
+code: 
+----
+photo: /media/projects/djangogirlsniteroi.jpg
+----
+tags: treinamento, python, django, html, css
