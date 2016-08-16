@@ -3,9 +3,9 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+  background-color: #101010;
   overflow:hidden;
+  color: #5a5a5a;
 }
 
 
@@ -40,7 +40,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  min-height: 100%;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -51,9 +51,16 @@ body {
 .carousel .item {
   background-color: #777;
 }
-.carousel-inner > .item > img {
+
+.carousel-inner > .item > .slide-cover {
+  max-height: 100vh;
+  min-width: 1351px;
+}
+
+.carousel-inner > .item > .slide-cover > img {
   top: 0;
   left: 0;
+  min-height: 100vh;
   min-width: 100%;
 }
 
@@ -88,6 +95,17 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+.mastfoot {
+  position: relative;
+  bottom: 20px;
+  color: #FFF;
+}
+
+.mastfoot a {
+  color: #FFF;
+}
+
 
 
 /* RESPONSIVE CSS
@@ -128,11 +146,4 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
-}
-
-@media (max-width: 768px) {
-  .carousel {
-    margin-top: 50px;
-  }
-
 }

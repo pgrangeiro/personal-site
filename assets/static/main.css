@@ -1,6 +1,7 @@
 body {
   font-family: 'Verdana', sans-serif;
   overflow: auto;
+  background-color: #FFF;
 }
 
 a {
@@ -41,16 +42,6 @@ div.page {
   background: #f1fbfe;
 }
 
-.mastfoot {
-  position: relative;
-  bottom: 100px;
-  color: #FFF;
-}
-
-.mastfoot a {
-  color: #FFF;
-}
-
 .marketing {
   margin-top: 70px;
 }
@@ -85,6 +76,10 @@ div.page {
   margin-bottom:10px;
 }
 
-.btns a{
+.btns a {
   margin-left: 10px;
+}
+
+.btns i {
+  line-height: 20px;
 }
