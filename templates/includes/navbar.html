@@ -9,13 +9,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">{{ this.title }}</a>
+          <a class="navbar-brand" href="#">Paula Grangeiro</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li{% if this._path == '/' %} class="active"{% endif%}><a href="/">Home</a></li>
             {% for href, title in [['/about', 'Sobre'], ['/talks', 'Palestras'], ['/projects', 'Portfólio']] %}
-            <li{% if this._path == '{{ href|url }}' %} class="active"{% endif%}><a href="{{ href|url }}">{{ title }}</a></li>
+            <li{% if this._path == href %} class="active"{% endif%}><a href="{{ href|url }}">{{ title }}</a></li>
             {% endfor %}
             {% for href, title in [['https://blog.paulagrangeiro.com.br', 'Blog']] %}
             <li><a href="{{ href }}" target="_blank">{{ title }}</a></li>

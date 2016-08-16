@@ -13,7 +13,7 @@
 {% block css %}
 <link href="{{ '/static/bootstrap/css/bootstrap.min.css'|url }}" rel="stylesheet">
 <link href="{{ '/static/carousel.css'|url }}" rel="stylesheet">
-<link href="{{ '/static/style.css'|url }}" rel="stylesheet">
+<link href="{{ '/static/main.css'|url }}" rel="stylesheet">
 {% endblock %}
 
 <body>
@@ -22,10 +22,17 @@
 
   {% block body %}{% endblock %}
 
+  {% block footer %}
+    <div class="container">
+      <p>&copy; 2016 <a href="http://www.paulagrangeiro.com.br">Paula Grangeiro</a></p>
+    </div>
+  {% endblock %}
+
   {% block script %}
   <script src="{{ '/static/jquery.min.js'|url }}"></script>
   <script src="{{ '/static/bootstrap/js/bootstrap.min.js'|url }}"></script>
   <script src="{{ '/static/holder.min.js'|url }}"></script>
   {% endblock %}
+
 </body>
 </html>

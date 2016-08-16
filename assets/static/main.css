@@ -1,7 +1,5 @@
 body {
   font-family: 'Verdana', sans-serif;
-  background-color: #666666;
-  overflow:hidden;
 }
 
 a {
@@ -40,4 +38,39 @@ header nav ul li {
 
 div.page {
   background: #f1fbfe;
+}
+
+.mastfoot {
+  position: relative;
+  bottom: 100px;
+  color: #FFF;
+}
+
+.mastfoot a {
+  color: #FFF;
+}
+
+.marketing {
+  margin-top: 50px;
+}
+
+.collection p, .collection h2 {
+  text-align: justify;
+}
+
+.collection p {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFF;
+}
+
+.social a {
+  font-size: 48px;
+}
+
+.featurette-divider {
+  margin: 50px 0;
 }

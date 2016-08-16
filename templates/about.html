@@ -1,1 +1,41 @@
 {% extends "layout.html" %}
+
+{% block css %}
+{{ super() }}
+<link href="{{ '/static/font-awesome/css/font-awesome.min.css'|url }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container marketing">
+
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">Hey! <span class="text-muted">It's me, Paula!</span></h2>
+      <p class="lead">Bacharel em Sistemas de Informação pela Fundação Educacional de Duque de Caxias. Desenvolvedora de software desde 2007, entusiasta Python a partir de 2012. Apaixonada por Arquitetura de Software e ativista de diversidade nas horas vagas.</p>
+      <div class="row social">
+        <div class="col-md-2">
+          <a href="https://github.com/pgrangeiro" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://br.linkedin.com/in/paulagrangeiro" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-2">
+          <a href="http://fb.me/paulagrangeiro" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://twitter.com/paulagrangeiro" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-2">
+          <a href="mailto:contato@paulagrangeiro.com.br"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{ '/static/img/perfil.jpg'|url }}">
+    </div>
+  </div>
+
+  <hr class="featurette-divider" />
+
+</div>
+{% endblock %}
