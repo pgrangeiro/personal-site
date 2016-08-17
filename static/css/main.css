@@ -63,8 +63,8 @@ div.page {
   font-size: 48px;
 }
 
-.tag a {
-  margin-bottom: 5px;
+p.tag {
+  text-align: left;
 }
 
 .featurette {
