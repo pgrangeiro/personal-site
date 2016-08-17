@@ -2,4 +2,4 @@
 name = pgrangeiro-site
 
 [servers.ghpages]
-target = ghpages+https://pgrangeiro/pgrangeiro.github.io?cname=paulagrangeiro.com.br
+target = ghpages+https://github.com/pgrangeiro/pgrangeiro.github.io.git?cname=paulagrangeiro.com.br
