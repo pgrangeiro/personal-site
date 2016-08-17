@@ -5,12 +5,56 @@ projects:
 #### project ####
 title: Django Girls Niterói
 ----
-description: Projeto internacional de tutoria para mulheres completamente iniciantes em programação.
+date: 2015-06-20
+----
+description: Projeto internacional de tutoria para mulheres com a missão de aumentar a diversidade na área de tecnologia. O Django Girls Niterói ocorreu dia 20 de junho de 2015  nas instalações da [Unilasalle](http://unilasalle.edu.br/rj/). Contamos com 13 treinadores voluntários para tutoriar 30 meninas completamente iniciantes em programação.
 ----
 url: https://djangogirls.org/niteroi/
 ----
-code:
+code: 
 ----
 photo: djangogirlsniteroi.jpg
+----
+tags: treinamento, python, django, html, css
+#### project ####
+title: Django Girls São José dos Campos
+----
+date: 2015-11-07
+----
+description: Projeto internacional de tutoria para mulheres com a missão de aumentar a diversidade na área de tecnologia. O Django Girls Niterói ocorreu dia 7 e 8 de novembro de 2015  nas instalações da [Fatec São José dos Campos](http://www.fatecsjc.edu.br/). Contamos com 25 treinadores voluntários para tutoriar 52 meninas completamente iniciantes em programação.
+----
+url: https://djangogirls.org/saojosedoscampos/
+----
+code: 
+----
+photo: dgsaojosedoscampos.jpg
+----
+tags: treinamento, python, django, html, css
+#### project ####
+title: Site PyLadies Duque de Caxias
+----
+date: 2015-11-16
+----
+description: Site do PyLadies Duque de Caxias desenvolvido utilizando [Pelican](http://blog.getpelican.com/) e hospedado no [GitHub Pages](https://pages.github.com/).
+----
+url: http://duquedecaxias.pyladies.com/
+----
+code: https://github.com/pyladies-dcaxias/pyladies-dcaxias.github.io
+----
+photo: pyladiesdcaxias.png
+----
+tags: python, pelican, bootstrap, css, html, ghpages
+#### project ####
+title: Django Girls Rio de Janeiro
+----
+date: 2016-03-12
+----
+description: Projeto internacional de tutoria para mulheres com a missão de aumentar a diversidade na área de tecnologia. O Django Girls Niterói ocorreu dia 12 de março de 2016  nas instalações do [Infnet](http://www.infnet.edu.br/infnet/). Contamos com 12 treinadores voluntários para tutoriar 30 meninas completamente iniciantes em programação.
+----
+url: https://djangogirls.org/riodejaneiro1/
+----
+code: 
+----
+photo: dgrio.jpg
 ----
 tags: treinamento, python, django, html, css
