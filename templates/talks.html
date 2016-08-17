@@ -13,7 +13,8 @@
     {% for talk in this.talks.blocks|sort(attribute='date', reverse=True) %}
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-      <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ talk.photo|url }}" />
+      {% set path = ['/media/talks/', talk.photo] %}
+      <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ path|join|url }}" />
 
       <h4>{{ talk.title }}</h4>
 
@@ -25,7 +26,8 @@
 
       <p class="pull-right btns">
         {% if talk.file|trim %}
-        <a href="{{ talk.file|url }}" target="_blank"><i class="fa fa-download" aria-hidden="true" title="Download slides"></i></a>
+        {% set path = ['/media/talks/', talk.file] %}
+        <a href="{{ path|join|url }}" target="_blank"><i class="fa fa-download" aria-hidden="true" title="Download slides"></i></a>
         {% endif %}
         {% if talk.video|trim %}
         <a href="{{ talk.video }}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true" title="Assistir vídeo"></i></a>

@@ -12,7 +12,8 @@
     {% for project in this.projects.blocks|sort(attribute='date', reverse=True) %}
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-      <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ project.photo|url }}" />
+      {% set path = ['/media/projects/', project.photo] %}
+      <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ path|join|url }}" />
 
       <h4>{{ project.title }}</h4>
 
