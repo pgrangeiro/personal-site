@@ -10,7 +10,7 @@
 <div class="container marketing collection">
   <div class="row">
     {% for project in this.projects.blocks|sort(attribute='date', reverse=True) %}
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
       {% set path = ['/media/projects/', project.photo] %}
       <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ path|join|url }}" />
