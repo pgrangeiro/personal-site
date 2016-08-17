@@ -10,7 +10,7 @@
 <div class="container marketing collection">
   <div class="row">
 
-    {% for talk in this.talks.blocks %}
+    {% for talk in this.talks.blocks|sort(attribute='date', reverse=True) %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
       <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ talk.photo|url }}" />
