@@ -11,7 +11,7 @@
   <div class="row">
 
     {% for talk in this.talks.blocks|sort(attribute='date', reverse=True) %}
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
       <img class="img-thumbnail" data-src="holder.js/360x250" src="{{ talk.photo|url }}" />
 
@@ -38,6 +38,9 @@
         {% endfor %}
       </p>
     </div>
+    {% if loop.index % 3 == 0 %}
+    </div><div class="row">
+    {% endif %}
     {% endfor %}
   </div>
 
