@@ -9,7 +9,7 @@ date: 2015-10-24
 ----
 event: Semana de Tecnologia da Unigranrio
 ----
-video:
+video: 
 ----
 file: 24102015.pdf
 ----
@@ -25,7 +25,7 @@ date: 2015-11-08
 ----
 event: Django Girls São José dos Campos
 ----
-video:
+video: 
 ----
 file: 08112015.pdf
 ----
@@ -41,7 +41,7 @@ date: 2016-03-27
 ----
 event: VI Encontro PythonRio
 ----
-video:
+video: 
 ----
 file: 27022016.pdf
 ----
@@ -57,7 +57,7 @@ date: 2016-04-13
 ----
 event: Workshop PyLadies Fundão
 ----
-video:
+video: 
 ----
 file: 13042016.pdf
 ----
@@ -73,7 +73,7 @@ date: 2016-06-14
 ----
 event: IV Encontro Carioca de Testes
 ----
-video:
+video: 
 ----
 file: 14062016.pdf
 ----
@@ -89,7 +89,7 @@ date: 2016-04-02
 ----
 event: I GruPy Grande Rio
 ----
-video:
+video: 
 ----
 file: 02042016.pdf
 ----
@@ -105,7 +105,7 @@ date: 2016-06-26
 ----
 event: Caipyra
 ----
-video:
+video: 
 ----
 file: 26062016.pdf
 ----
@@ -123,9 +123,9 @@ event: FISL 17
 ----
 video: http://hemingway.softwarelivre.org/fisl17/41e/sala41e-high-201607151602.ogv
 ----
-file: 26062016.pdf
+file: 15072016.pdf
 ----
-photo: 26062016.png
+photo: 15072016.png
 ----
 tags: testes unitários, python, melhores práticas, qualidade de software, padrões de projeto
 ---
