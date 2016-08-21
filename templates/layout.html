@@ -15,7 +15,7 @@
 <link href="{{ '/static/css/carousel.css'|url }}" rel="stylesheet">
 {% endblock %}
 
-<body>
+<body class="{% block body_classes %}{% endblock %}">
 
   {% include 'includes/navbar.html' %}
 
@@ -23,7 +23,7 @@
 
   {% block footer %}
     <div class="container">
-      <p>&copy; 2016 <a href="http://www.paulagrangeiro.com.br">Paula Grangeiro</a> - <a href="mailto:contato@paulagrangeiro.com.br">contato@paulagrangeiro.com.br</a></p>
+      <p>&copy; 2016 <a href="http://www.paulagrangeiro.com.br">Paula Grangeiro</a></p>
     </div>
   {% endblock %}
 
