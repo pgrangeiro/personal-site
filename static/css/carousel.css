@@ -4,10 +4,12 @@
 
 body {
   background-color: #101010;
-  overflow:hidden;
   color: #5a5a5a;
 }
 
+.blocked {
+  overflow:hidden;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
