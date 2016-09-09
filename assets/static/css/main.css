@@ -82,3 +82,7 @@ p.tag {
 .btns i {
   line-height: 20px;
 }
+
+h4 .label {
+  padding: .5em .6em .3em;
+}
