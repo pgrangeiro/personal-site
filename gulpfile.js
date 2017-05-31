@@ -56,8 +56,11 @@ gulp.task('copy', function() {
         ])
         .pipe(gulp.dest('assets/font-awesome'))
 
-    gulp.src(['static/device-mockups'])
+    gulp.src(['static/device-mockups/**/*.png', 'static/device-mockups/**/*.css'])
         .pipe(gulp.dest('assets/device-mockups'))
+
+    gulp.src('static/img/*')
+        .pipe(gulp.dest('assets/img'))
 })
 
 // Run everything
