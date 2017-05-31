@@ -18,7 +18,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('assets/css/*.css')
+    return gulp.src('assets/css/main.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('assets/css'))
@@ -55,6 +55,9 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.json'
         ])
         .pipe(gulp.dest('assets/font-awesome'))
+
+    gulp.src(['static/device-mockups'])
+        .pipe(gulp.dest('assets/device-mockups'))
 })
 
 // Run everything
