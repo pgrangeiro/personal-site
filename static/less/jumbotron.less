@@ -1,0 +1,29 @@
+@import "variables.less";
+
+.jumbotron {
+    margin-top: 51px;
+    position: relative;
+
+    &.top {
+        background: linear-gradient(to bottom, @black, @dark);
+        color: @white;
+    }
+
+    &.image {
+        min-height: 34em;
+        margin-bottom: 0px;
+        background-image: url('/assets/img/jumbotron.jpg');
+        background-size: cover;
+        background-position: center center;
+        color: @white;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
