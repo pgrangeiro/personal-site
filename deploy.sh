@@ -7,10 +7,10 @@ cd ../tmp
 git checkout master
 rm -rf *
 
-cp -R ../pgrangeiro.github.io/_site/index.html .
-cp -R ../pgrangeiro.github.io/_site/CNAME .
-cp -R ../pgrangeiro.github.io/_site/LICENSE.md .
-cp -R ../pgrangeiro.github.io/_site/assets .
+cp -R ../pgrangeiro.github.io/index.html .
+cp -R ../pgrangeiro.github.io/CNAME .
+cp -R ../pgrangeiro.github.io/LICENSE.md .
+cp -R ../pgrangeiro.github.io/assets .
 
 git status
 git add -A .
