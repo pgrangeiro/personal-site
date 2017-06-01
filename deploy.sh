@@ -7,7 +7,6 @@ cd tmp
 git checkout master
 rm -rf *
 
-ls  ~/pgrangeiro/pgrangeiro.github.io/
 cp ~/pgrangeiro/pgrangeiro.github.io/index.html .
 cp ~/pgrangeiro/pgrangeiro.github.io/CNAME .
 cp ~/pgrangeiro/pgrangeiro.github.io/LICENSE.md .
