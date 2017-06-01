@@ -10,6 +10,6 @@ branches:
 deploy:
   provider: script
   script: "deploy.sh"
-  skip_cleanup: true
+  skip_cleanup: false
   on:
     branch: develop
