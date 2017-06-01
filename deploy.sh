@@ -1,12 +1,16 @@
+#!/bin/bash
+
+set -e
+
 git clone https://${GITHUB_TOKEN}@github.com:pgrangeiro/pgrangeiro.github.io.git ../tmp
 cd ../tmp
 git checkout master
 rm -rf *
 
-cp -R ../pgrangeiro/pgrangeiro.github.io/_site/index.html .
-cp -R ../pgrangeiro/pgrangeiro.github.io/_site/CNAME .
-cp -R ../pgrangeiro/pgrangeiro.github.io/_site/LICENSE.md .
-cp -R ../pgrangeiro/pgrangeiro.github.io/_site/assets .
+cp -R ../pgrangeiro.github.io/_site/index.html .
+cp -R ../pgrangeiro.github.io/_site/CNAME .
+cp -R ../pgrangeiro.github.io/_site/LICENSE.md .
+cp -R ../pgrangeiro.github.io/_site/assets .
 
 git status
 git add -A .
