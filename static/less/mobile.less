@@ -1,0 +1,36 @@
+@import "variables.less";
+
+
+.sm-show {
+    display: none;
+}
+
+.sm-hide {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .valign-center {
+        display: block;
+        align-items: center;
+    }
+
+    .sm-show {
+        display: block;
+    }
+
+    .sm-hide {
+        display: none;
+    }
+
+}
+
+.navbar-header {
+    button {
+        color: @white;
+
+        &:hover {
+            color: @dark;
+        }
+    }
+}
