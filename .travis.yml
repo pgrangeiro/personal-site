@@ -10,7 +10,7 @@ branches:
     - develop
 deploy:
   provider: script
-  script: deploy.sh
-  skip_cleanup: false
+  script: "deploy.sh"
+  skip_cleanup: true
   on:
     branch: develop
