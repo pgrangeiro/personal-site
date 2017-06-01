@@ -5,6 +5,9 @@ node_js:
 before_script:
   - npm install -g gulp gulp-cli
 script: gulp
+branches:
+  only:
+    - master
 deploy:
   provider: pages
   skip_cleanup: true
