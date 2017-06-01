@@ -1,12 +1,13 @@
 #!/bin/bash
 
-set -e
+set -o errexit
 
 git clone https://${GITHUB_TOKEN}@github.com:pgrangeiro/pgrangeiro.github.io.git tmp
 cd tmp
 git checkout master
 rm -rf *
 
+ls  ~/pgrangeiro/pgrangeiro.github.io/
 cp ~/pgrangeiro/pgrangeiro.github.io/index.html .
 cp ~/pgrangeiro/pgrangeiro.github.io/CNAME .
 cp ~/pgrangeiro/pgrangeiro.github.io/LICENSE.md .
