@@ -12,4 +12,4 @@ git status
 git add -A .
 git status
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --f origin `master`
+git push -f origin `master`
