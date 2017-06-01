@@ -7,9 +7,14 @@ script: gulp
 branches:
   only:
     - develop
+after_success:
+  - "mkdir site"
+  - "cp index.html site/"
+  - "cp CNAME site/"
+  - "cp -R assets/ site/"
 deploy:
   provider: pages
-  run: "deploy.sh"
+  local_dir: site
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
