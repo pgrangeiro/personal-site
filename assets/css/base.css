@@ -1,0 +1,18 @@
+body {
+  font-family: "Ubuntu", "Arial";
+}
+.btn-primary {
+  background-color: #A239CA;
+  border-color: #6F278A;
+}
+.btn-primary:hover {
+  background-color: #3C154A;
+  border-color: #3C154A;
+}
+section {
+  margin: 100px auto;
+}
+.valign-center {
+  display: flex;
+  align-items: center;
+}

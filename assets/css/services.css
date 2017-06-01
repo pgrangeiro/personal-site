@@ -1,0 +1,9 @@
+section .item {
+  margin: 20px 0 ;
+}
+section i.fa {
+  font-size: 6em;
+  background: linear-gradient(to bottom, #A239CA, #4717F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
