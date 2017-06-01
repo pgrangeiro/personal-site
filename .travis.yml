@@ -6,7 +6,7 @@ before_script:
 script: gulp
 branches:
   only:
-    - develop
+    - master
 after_success:
   - "mkdir site"
   - "cp index.html site/"
@@ -18,4 +18,4 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-    branch: develop
+    branch: master
