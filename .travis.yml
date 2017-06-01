@@ -7,10 +7,10 @@ before_script:
 script: gulp
 branches:
   only:
-    - master
+    - develop
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-    branch: gh-pages
+    branch: master
