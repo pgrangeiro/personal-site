@@ -1,0 +1,33 @@
+@import "variables.less";
+
+footer {
+    background-color: @dark;
+    color: @white;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        &.buttons {
+            font-size: 2em;
+            li {
+                float: left;
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+    a {
+        color: @white;
+
+        &:hover {
+            color: @blue;
+            text-decoration: none;
+        }
+    }
+}

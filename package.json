@@ -1,0 +1,35 @@
+{
+  "name": "paulagrangeiro.com.br",
+  "version": "2.0.0",
+  "description": "Paula Grangeiro Personal Site",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgrangeiro/pgrangeiro.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "site"
+  ],
+  "author": "Paula Grangeiro",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pgrangeiro/pgrangeiro.github.io/issues"
+  },
+  "homepage": "https://github.com/pgrangeiro/pgrangeiro.github.io#readme"
+}
