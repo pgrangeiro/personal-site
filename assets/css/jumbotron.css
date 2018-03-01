@@ -1,0 +1,24 @@
+.jumbotron {
+  margin-top: 51px;
+  position: relative;
+}
+.jumbotron.top {
+  background: linear-gradient(to bottom, #000000, #0E0B16);
+  color: #FFFFFF;
+}
+.jumbotron.image {
+  min-height: 34em;
+  margin-bottom: 0px;
+  background-image: url('/assets/img/jumbotron.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #FFFFFF;
+}
+.jumbotron .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
