@@ -4,7 +4,7 @@ $().ready(function() {
 
     var anchor = $(this).attr("href");
 
-    $("body").animate({
+    $("html,body").animate({
       scrollTop: $(anchor).offset().top - 51
     }, 1000);
 
